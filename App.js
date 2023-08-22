@@ -1,9 +1,11 @@
 import {Text, View,StyleSheet} from "react-native";
+import GlassMorphism from "./src/GlassMorphism/GlassMorphism";
+import Confetti from "./src/Confetti/Confetti";
 
 const App = () => {
   return (
       <View style={styles.container}>
-        <Text>React Native Skia Animation</Text>
+          <Confetti/>
       </View>
   )
 }
@@ -11,8 +13,6 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    justifyContent:'center',
-    alignItems:'center'
   }
 })
 export default App;
